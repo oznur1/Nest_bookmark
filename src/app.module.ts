@@ -1,0 +1,16 @@
+import { config } from './../node_modules/effect/src/internal/defaultServices';
+import { Module } from '@nestjs/common';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+import { AuthModule } from './auth/auth.module';
+import {ConfigModule} from "@nestjs/config"
+@Module({
+  imports: [
+    //.env doyasını global olarak kullanabilmek için
+    ConfigModule.forRoot({
+      isGlobal:true,
+    }),AuthModule],
+  controllers: [AppController],
+  providers: [AppService],
+})
+export class AppModule {}
