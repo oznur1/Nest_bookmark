@@ -15,16 +15,20 @@ API Endpoints
  --- POST /auth/logout > kullanıcı çıkışı 
  --- POST /auth/refresh > token yenileme
 
--- User Endpoints (JWT Kontrolü) 
---- GET /user/profile > kullanıcı profili
- --- PUT /user/update > kullanıcı profili güncelle
 
--- Bookmark Endpoints (JWT Kontrolü)
- --- GET /bookmarks > bookmark listesi
+  -- User Endpoints (JWT Kontrolü)  
+  --- GET /user/profile > kullanıcı profili
+  --- PUT /user/update > kullanıcı profili güncelle
+
+
+  -- Bookmark Endpoints (JWT Kontrolü)
+   --- GET /bookmarks > bookmark listesi
   --- GET /bookmarks/:id > bookmark detayı 
   --- POST /bookmarks > bookmark oluştur
    --- PUT /bookmarks/:id > bookmark güncelle
     --- DELETE /bookmarks/:id > bookmark sil
+
+
 
 Prisma
 Modern web uygulamarı için bir ORM (Object-Relational Mapping)
