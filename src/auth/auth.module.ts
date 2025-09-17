@@ -3,7 +3,7 @@ import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
 import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
-import { JWTRefreshStrategy } from './strategy/jwt-refresh.stregy';
+import { JWTRefreshStrategy } from './strategy/jwt-refresh.strategy';
 import { JWTAccessStrategy } from './strategy/jwt-access.strategy';
 
 @Module({
